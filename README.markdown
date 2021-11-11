@@ -81,6 +81,7 @@ You will see several files. The two most important files are:
   - `siteManifest`: This is the path to your site's manifest.
   - `theme`: You should fill this in with `jekyll-theme-elegant-simplicity`.
   - `microsoft144x144`: This is the path to the "favicon" of the dimensions `144x44`.
+  - `iconUrlIsAbsolute`: Set this to `true` if you are supplying your icon URLs from another server.
   - `plugins`: Be sure to add the following packages to this section:
     - `jekyll-feed`
     - `jekyll-seo-tag`

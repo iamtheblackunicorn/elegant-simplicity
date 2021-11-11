@@ -9,6 +9,7 @@ viewLink: "Read Post!"
 closeNavText: "Close Me!"
 openNavText: "Menu"
 keywords: ""
+iconUrlIsAbsolute: true
 rssPrompt: "Subscribe to the RSS feed."
 57x57: "https://blckunicorn.art/assets/favicon/apple-icon-57x57.png"
 60x60: "https://blckunicorn.art/assets/favicon/apple-icon-60x60.png"
