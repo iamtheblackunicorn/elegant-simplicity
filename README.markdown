@@ -4,6 +4,8 @@
 
 # ELEGANT SIMPLICITY :high_heel:
 
+![GitHub CI](https://github.com/iamtheblackunicorn/elegant-simplicity/actions/workflows/jekyll.yml/badge.svg)
+
 ***What is better than elegant simplicity?*** :high_heel:
 
 ## About :books:
