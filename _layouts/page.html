@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+
+ {% include credits.html %}
+ {% include head.html %}
+
+ <body>
+
+  <div class="content">
+
+   {% include heading.html %}
+   {% include nav.html %}
+
+    <h2>{{ page.title }}</h2>
+    {{ content }}
+    <hr/>
+
+
+  </div>
+  {% include javascript.html %}
+ </body>
+
+</html>

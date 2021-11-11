@@ -1,0 +1,11 @@
+{% if site.data.nav %}
+<div class="nav" id="nav">
+  <h1 class="nav">{{ site.title }}</h1>
+ {% for item in site.data.nav %}
+  <p class="nav"><a class="nav" href="{{ item.url | prepend: site.baseurl }}">{{ item.name }}</a></p>
+ {% endfor %}
+ <p class="nav"><a class="nav" href="{{ '/rss.xml' | prepend: site.baseurl }}">{{ site.rssPrompt }}</a></p>
+ <p class="nav"><a class="nav" href="javascript:closeNav();">{{ site.closeNavText }}</a></p>
+</div>
+{% else %}
+{% endif %}

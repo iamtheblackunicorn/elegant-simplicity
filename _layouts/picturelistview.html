@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+ {% include credits.html %}
+ {% include head.html %}
+
+ <body>
+
+  <div class="content">
+
+   {% include heading.html %}
+   {% include nav.html %}
+
+    <h2>{{ page.title }}</h2>
+    {{ content }}
+    <ul>
+    {% for item in site.data[page.pool] %}
+    <li>
+      <h3>{{ item.name }}</h3>
+      <p>{{ item.description }}</p>
+      <img src="{{ item.link | prepend: site.baseurl }}"/>
+    </li>
+    {% endfor %}
+    </ul>
+    <hr/>
+
+
+  </div>
+  {% include javascript.html %}
+ </body>
+
+</html>

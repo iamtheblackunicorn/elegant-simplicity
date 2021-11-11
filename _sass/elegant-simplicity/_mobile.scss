@@ -1,0 +1,75 @@
+/*
+ELEGANT SIMPLICITY by Alexander Abraham, "The Black Unicorn".
+Licensed under the MIT license.
+*/
+
+@import 'variables';
+
+@media screen and (max-width: 800px) {
+  body {
+    border: 5px solid $mainColor;
+  }
+  div.content {
+    width: 80%;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  span.subtitle {
+    font-size: 23px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 21px;
+  }
+  p {
+  font-size: 20px;
+  }
+  a {
+    font-size: 20px;
+  }
+  img {
+    max-width: 80%;
+    min-width: 50%;
+    border: 4px solid #000;
+  }
+  p.imgSubtitle {
+    font-size: 18px;
+  }
+  p.postSubtitle {
+    font-size: 18px;
+  }
+  hr {
+    height: 4px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  code {
+    font-size: 20px;
+  }
+  p.nav {
+    font-size: 20px;
+    padding: 10px;
+  }
+  a.nav {
+    font-size: 20px;
+  }
+  h1.nav {
+    font-size: 30px;
+  }
+  div.nav {
+    border: 5px solid $accentColor;
+    overflow: scroll;
+  }
+  li {
+    font-size: 20px;
+    color: $mainColor;
+    padding: 10px;
+  }
+}

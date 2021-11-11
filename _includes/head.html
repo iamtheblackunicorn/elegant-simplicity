@@ -1,0 +1,32 @@
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <meta charset=UTF-8">
+ <meta name="description" content="{{ site.description }}"/>
+ {% if page.layout == 'post' %}
+ <meta property="og:image" content="{{ page.banner | prepend: site.baseurl }}">
+ <meta property="og:image:type" content="image/jpg">
+ {% else %}
+ {% endif %}
+ <link rel="apple-touch-icon" sizes="57x57" href="{{ site.57x57 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="60x60" href="{{ site.60x60 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="72x72" href="{{ site.72x72 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="76x76" href="{{ site.76x76 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="114x114" href="{{ site.114x114 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="120x120" href="{{ site.120x120 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="144x144" href="{{ site.144x144 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="152x152" href="{{ site.152x152 | prepend: site.baseurl }}">
+ <link rel="apple-touch-icon" sizes="180x180" href="{{ site.180x180 | prepend: site.baseurl }}">
+ <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.192x192 | prepend: site.baseurl }}">
+ <link rel="icon" type="image/png" sizes="32x32" href="{{ site.32x32 | prepend: site.baseurl }}">
+ <link rel="icon" type="image/png" sizes="96x96" href="{{ site.96x96 | prepend: site.baseurl }}">
+ <link rel="icon" type="image/png" sizes="16x16" href="{{ site.16x16 | prepend: site.baseurl }}">
+ <link rel="manifest" href="{{ site.manifest | prepend: site.baseurl }}">
+ <meta name="msapplication-TileColor" content="#000000">
+ <meta name="msapplication-TileImage" content="{{ site.144x144 | prepend: site.baseurl }}">
+ <meta name="theme-color" content="#000000">
+ <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}"/>
+ <meta name="robots" content="{{ site.description }}"/>
+ <meta name="keywords" content="{{ site.keywords }}"/>
+ <title>{{ site.title }}</title>
+ {% seo %}
+</head>

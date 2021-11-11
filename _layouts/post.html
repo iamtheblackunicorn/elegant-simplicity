@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+ {% include credits.html %}
+ {% include head.html %}
+
+ <body>
+
+  <div class="content">
+
+   {% include heading.html %}
+   {% include nav.html %}
+
+    <h2>{{ page.title }}</h2>
+    <p class="postSubtitle">{{ site.postedOnText }}{{ page.date_time }}</p>
+    {% assign contentLength = content | size %}
+    {% if contentLength > 250 %}
+    <p class="postSubtitle">{{ contentLength | divided_by: 250 | divided_by: 3 }} {{ site.minRead }}</p>
+    {% else %}
+    {% endif %}
+    <img src="{{ page.banner | prepend: site.baseurl }}"/>
+    <p class="imgSubtitle">{{ page.bannerSubtitle }}</p>
+     {{ page.content }}
+    <hr/>
+
+  </div>
+  {% include javascript.html %}
+ </body>
+
+</html>

@@ -1,0 +1,38 @@
+owner: "Alexander Abraham"
+title: "Elegant Simplicity"
+googleAnalyticsId: "" # Fill this in.
+postedOnText: "Posted on "
+motto: "Vamos!"
+minRead: "min. read"
+apiViewText: "View"
+viewLink: "Read Post!"
+closeNavText: "Close Me!"
+openNavText: "Menu"
+keywords: ""
+rssPrompt: "Subscribe to the RSS feed."
+57x57: "https://blckunicorn.art/assets/favicon/apple-icon-57x57.png"
+60x60: "https://blckunicorn.art/assets/favicon/apple-icon-60x60.png"
+72x72: "https://blckunicorn.art/assets/favicon/apple-icon-72x72.png"
+76x76: "https://blckunicorn.art/assets/favicon/apple-icon-76x76.png"
+114x114: "https://blckunicorn.art/assets/favicon/apple-icon-114x114.png"
+120x120: "https://blckunicorn.art/assets/favicon/apple-icon-120x120.png"
+144x144: "https://blckunicorn.art/assets/favicon/apple-icon-144x144.png"
+152x152: "https://blckunicorn.art/assets/favicon/apple-icon-152x152.png"
+180x180: "https://blckunicorn.art/assets/favicon/apple-icon-180x180.png"
+192x192: "https://blckunicorn.art/assets/favicon/android-icon-192x192.png"
+32x32: "https://blckunicorn.art/assets/favicon/favicon-32x32.png"
+96x96: "https://blckunicorn.art/assets/favicon/favicon-96x96.png"
+16x16: "https://blckunicorn.art/assets/favicon/favicon-16x16.png"
+144x144: "https://blckunicorn.art/assets/favicon/ms-icon-144x144.png"
+manifest: "https://blckunicorn.art/assets/favicon/manifest.json"
+description: >-
+  The Black Unicorn's blog.
+  A blog for all my creative stuff.
+baseurl: "/elegant-simplicity"
+url: "https://blckunicorn.art/elegant-simplicity"
+feed:
+  path: "rss.xml"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap

@@ -1,0 +1,176 @@
+/*
+ELEGANT SIMPLICITY by Alexander Abraham, "The Black Unicorn".
+Licensed under the MIT license.
+*/
+
+@import 'variables';
+
+html,body {
+  bottom: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  right: 0;
+  border: 8px solid $mainColor;
+  background-color: $accentColor;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: $stdFont;
+  overflow: scroll;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+div.content {
+  margin: 0 auto;
+  width: 60%;
+  padding: 20px;
+  border: none;
+  background-color: $accentColor;
+
+}
+h1 {
+  text-align: left;
+  font-family: $headingFont;
+  font-size: 40px;
+  font-weight: bold;
+  color: $mainColor;
+  padding: $stdPadding;
+}
+span.subtitle {
+  text-align: left;
+  font-size: 30px;
+  font-weight: lighter;
+  color: $mainColor;
+  padding: $stdPadding;
+}
+h2 {
+  text-align: left;
+  font-size: 36px;
+  font-weight: lighter;
+  color: $mainColor;
+  padding: $stdPadding;
+}
+h3 {
+  text-align: left;
+  font-size: 32px;
+  font-weight: lighter;
+  color: $mainColor;
+  padding: $stdPadding;
+}
+h4 {
+  text-align: left;
+  font-size: 28px;
+  font-weight: lighter;
+  color: $mainColor;
+  padding: $stdPadding;
+}
+p {
+  text-align: left;
+  font-size: 26px;
+  font-weight: lighter;
+  color: $mainColor;
+  padding: $stdPadding;
+}
+a {
+  text-align: left;
+  font-size: 26px;
+  font-weight: lighter;
+  color: $mainColor;
+  transition-duration: 0.6s;
+}
+a:hover {
+  color: #808080;
+}
+img {
+  margin: 0 auto;
+  display: block;
+  max-width: 80%;
+  min-width: 30%;
+  border: 4px solid #000;
+}
+p.imgSubtitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  color: $mainColor;
+  padding: $stdPadding;
+}
+p.postSubtitle {
+  padding: $stdPadding;
+  text-align: left;
+  font-size: 20px;
+  font-weight: lighter;
+  color: $mainColor;
+  padding: $stdPadding;
+}
+hr {
+  width: 100%;
+  display: block;
+  border: none;
+  background-color: $mainColor;
+  height: 3px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+code {
+  border-radius: 5px;
+  background-color: #000;
+  color: #FFF;
+  padding: 5px;
+  font-size: 26px;
+  font-family: monospace;
+}
+div.nav {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  margin: 0;
+  display: none;
+  position: fixed;
+  z-index: 3;
+  margin: 0;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  border: 8px solid #FFF;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+p.nav {
+  color: #FFF;
+  text-align: center;
+  font-size: 26px;
+  padding: 20px;
+}
+a.nav {
+  color: $accentColor;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 26px;
+  transition-duration: 0.6s;
+}
+a.nav:hover {
+  color: $tertiary;
+}
+h1.nav {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: $accentColor;
+  padding: $stdPadding;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 26px;
+  color: $mainColor;
+  padding: 20px;
+}
