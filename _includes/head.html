@@ -3,9 +3,16 @@
  <meta charset=UTF-8">
  <meta name="description" content="{{ site.description }}"/>
  {% if page.layout == 'post' %}
- <meta property="og:image" content="{{ page.banner | prepend: site.baseurl }}">
- <meta property="og:image:type" content="image/jpg">
- <meta property="og:image:type" content="image/png">
+ {% if bannerUrlIsAbsolute %}
+  <meta property="og:image" content="{{ page.banner }}">
+ {% else %}
+   <meta property="og:image" content="{{ page.banner | prepend: site.baseurl }}">
+ {% endif %}
+ {% if page.bannerType == 'png' %}
+   <meta property="og:image:type" content="image/png">
+ {% else %}
+  <meta property="og:image:type" content="image/jpg">
+ {% endif %}
  {% else %}
  {% endif %}
  
