@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+bannerType: "jpg"
 date_time:   "01/08/2021"
 bannerSubtitle: "Welcome to Jekyll!"
 description: "Welcome to Jekyll! A sample post for this Jekyll site."
