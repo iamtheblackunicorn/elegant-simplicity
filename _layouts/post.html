@@ -19,7 +19,11 @@
     <p class="postSubtitle">{{ contentLength | divided_by: 250 | divided_by: 3 }} {{ site.minRead }}</p>
     {% else %}
     {% endif %}
-    <img src="{{ page.banner | prepend: site.baseurl }}"/>
+    {% if bannerUrlIsAbsolute %}
+     <img src="{{ post.banner }}"/>
+    {% else %}
+     <img src="{{ post.banner | prepend: site.baseurl }}"/>
+    {% endif %}
     <p class="imgSubtitle">{{ page.bannerSubtitle }}</p>
      {{ page.content }}
     <hr/>
