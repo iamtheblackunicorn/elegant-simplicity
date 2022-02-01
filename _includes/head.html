@@ -3,10 +3,16 @@
  <meta charset=UTF-8">
  <meta name="description" content="{{ site.description }}"/>
  {% if page.layout == 'post' %}
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:image:alt" content="{{ page.bannerDescription }}">
+ <meta name="twitter:title" content="{{ page.title }}">
+ <meta name="twitter:description" content="{{ page.description }}">
  {% if page.bannerUrlIsAbsolute == true %}
   <meta property="og:image" content="{{ page.banner }}">
+  <meta name="twitter:image" content="{{ page.banner }}">
  {% else %}
    <meta property="og:image" content="{{ page.banner | prepend: site.baseurl }}">
+   <meta name="twitter:image" content="{{ page.banner | prepend: site.baseurl }}">
  {% endif %}
  {% if page.bannerType == 'png' %}
    <meta property="og:image:type" content="image/png">
