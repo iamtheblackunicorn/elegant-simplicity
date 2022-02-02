@@ -8,9 +8,9 @@
     {% else %}
     "{{ post.banner | prepend: site.baseurl }}",
     {% endif %}
-    "{{ post.content |  strip_html }}"
+    "{{ post.content |  strip_html | strip_newlines }}"
   ],
-  {% if forloop.last == false %}
+  {% if forloop.last == true %}
   "{{ post.title }}":[
     "{{ post.date_time }}",
     "{{ post.description }}",
@@ -19,7 +19,7 @@
     {% else %}
     "{{ post.banner | prepend: site.baseurl }}",
     {% endif %}
-    "{{ post.content |  strip_html | replace: '"', '\"' }}"
+    "{{ post.content |  strip_html | strip_newlines }}"
   ]
   {% else %}
   {% endif %}
