@@ -10,7 +10,7 @@
     "{{ post.banner | prepend: site.baseurl }}",
     {% endif %}
     "{{ post.content |  strip_html | strip_newlines }}"
-  ],
+  ]
   {% else %}
   "{{ post.title }}":[
     "{{ post.date_time }}",
@@ -21,7 +21,7 @@
     "{{ post.banner | prepend: site.baseurl }}",
     {% endif %}
     "{{ post.content |  strip_html | strip_newlines }}"
-  ]
+  ],
   {% endif %}
   {% endfor %}
 }
