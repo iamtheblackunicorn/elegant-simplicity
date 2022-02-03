@@ -1,5 +1,6 @@
 {
   {% for post in site.posts %}
+   {% if post.show == true %}
    {% if forloop.last == true %}
   "{{ post.title }}":[
     "{{ post.date_time }}",
@@ -22,6 +23,8 @@
     {% endif %}
     "{{ post.content |  strip_html | strip_newlines }}"
   ],
+  {% endif %}
+  {% else %}
   {% endif %}
   {% endfor %}
 }
