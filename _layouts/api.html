@@ -1,6 +1,6 @@
 {
   {% for post in site.posts %}
-   {% if post.show == true %}
+   {% if post.showAPI == true %}
    {% if forloop.last == true %}
   "{{ post.title }}":[
     "{{ post.date_time }}",
