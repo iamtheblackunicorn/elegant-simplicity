@@ -10,6 +10,10 @@ closeNavText: "Close Me!"
 openNavText: "Menu"
 keywords: ""
 iconUrlIsAbsolute: true
+bannerDescription: "An elegant and simple theme."
+banner: "https://blckunicorn.art/assets/posts/sample.jpg"
+bannerUrlIsAbsolute: true
+bannerType: "jpg"
 rssPrompt: "Subscribe to the RSS feed."
 57x57: "https://blckunicorn.art/assets/favicon/apple-icon-57x57.png"
 60x60: "https://blckunicorn.art/assets/favicon/apple-icon-60x60.png"

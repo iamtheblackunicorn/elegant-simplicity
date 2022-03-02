@@ -2,25 +2,56 @@
  <meta name="viewport" content="width=device-width, initial-scale=1"/>
  <meta charset=UTF-8">
  <meta name="description" content="{{ site.description }}"/>
+
+
  {% if page.layout == 'post' %}
- <meta name="twitter:card" content="summary_large_image">
- <meta name="twitter:image:alt" content="{{ page.bannerDescription }}">
+
+ <meta name="twitter:card" content="summary_large_image"/>
+ <meta name="twitter:image:alt" content="{{ page.bannerSubtitle }}"/>
  <meta name="twitter:title" content="{{ page.title }}">
- <meta name="twitter:description" content="{{ page.description }}">
+ <meta name="og:title" content="{{ page.title }}"/>
+ <meta name="og:description" content="{{ page.description }}"/>
+ <meta name="twitter:description" content="{{ page.description }}"/>
+
  {% if page.bannerUrlIsAbsolute == true %}
-  <meta property="og:image" content="{{ page.banner }}">
-  <meta name="twitter:image" content="{{ page.banner }}">
+ <meta property="og:image" content="{{ page.banner }}"/>
+ <meta name="twitter:image" content="{{ page.banner }}">
  {% else %}
-   <meta property="og:image" content="{{ page.banner | prepend: site.baseurl }}">
-   <meta name="twitter:image" content="{{ page.banner | prepend: site.baseurl }}">
+ <meta property="og:image" content="{{ page.banner  | prepend: site.baseurl}}"/>
+ <meta name="twitter:image" content="{{ page.banner | prepend: site.baseurl }}"/>
  {% endif %}
+
  {% if page.bannerType == 'png' %}
-   <meta property="og:image:type" content="image/png">
+ <meta property="og:image:type" content="image/png"/>
  {% else %}
-  <meta property="og:image:type" content="image/jpg">
+ <meta property="og:image:type" content="image/jpg"/>
  {% endif %}
+
  {% else %}
+
+ <meta name="twitter:card" content="summary_large_image"/>
+ <meta name="twitter:image:alt" content="{{ site.bannerDescription }}"/>
+ <meta name="twitter:title" content="{{ site.title }}"/>
+ <meta name="og:title" content="{{ site.title }}"/>
+ <meta name="og:description" content="{{ site.description }}"/>
+ <meta name="twitter:description" content="{{ site.description }}"/>
+
+ % if page.bannerUrlIsAbsolute == true %}
+ <meta property="og:image" content="{{ site.banner }}"/>
+ <meta name="twitter:image" content="{{ site.banner }}">
+ {% else %}
+ <meta property="og:image" content="{{ site.banner  | prepend: site.baseurl}}"/>
+ <meta name="twitter:image" content="{{ site.banner | prepend: site.baseurl }}"/>
  {% endif %}
+
+ {% if site.bannerType == 'png' %}
+ <meta property="og:image:type" content="image/png"/>
+ {% else %}
+ <meta property="og:image:type" content="image/jpg"/>
+ {% endif %}
+
+ {% endif %}
+
 
  {% if site.iconUrlIsAbsolute == true %}
  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.57x57 }}">
