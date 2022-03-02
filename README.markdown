@@ -64,6 +64,10 @@ You will see several files. The two most important files are:
   - `viewLink`: This is displayed on the link that leads you to a post.
   - `closeNavText`: This is the link for closing the navigation menu.
   - `openNavText`: This is the link for opening the navigation menu.
+  - `bannerDescription`: The description of your banner.
+  - `banner`: The relative or absolute URL of your banner.
+  - `bannerUrlIsAbsolute`: If you are fetching the banner picture from another server, set this to`true` or `false`.
+  - `bannerType`: What type of image is the banner.
   - `keywords`: This are the keywords for search engines.
   - `feed`: This tells Jekyll where your RSS feed will be located.
   - `rssPrompt`: This will be displayed on the link to subscribe to your site's RSS feed.
